@@ -1,5 +1,7 @@
 // To generate random numbers
 
+
+
 function random() {
     console.log('randomizing numbers')
     // For number 1 
@@ -35,3 +37,5 @@ function verify (){
    console.log(z)
    document.getElementById('correctAnswer').innerHTML = z
 }
+
+// timer 
