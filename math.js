@@ -3,7 +3,7 @@
 function random() {
     console.log('randomizing numbers')
     // For number 1 
-    let x = Math.random()*100 
+    let x = Math.random()*100
     let y = Math.round(x)
     document.getElementById('num1').innerHTML=y
 
