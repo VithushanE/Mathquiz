@@ -1,9 +1,12 @@
-#num1, #num2, #sign{
+/* #num1, #num2, #sign{
     text-align: center;
    
 }
 
+.together{
+    columns: 3;
 
+}
 
 h1,h3{
     text-align: center;
@@ -13,10 +16,58 @@ h3{
     font-style: italic;
 }
 
-#center{
+.center{
     margin-top: 10%;
 }
 
 body{
     background: purple;
+}
+
+p{
+    color:white;
+} */
+
+*{
+    box-sizing: border-box;
+    padding:0%;
+    margin: 0%;
+}
+
+/* background */
+
+body{
+    background-image: url('./assets/mathpage.jpeg')
+}
+
+/* header*/
+.header{
+    box-sizing: border-box;
+    text-align: center;
+}
+h1{
+    font-weight: bolder;
+    color: rosybrown;
+    
+}
+h4{
+    font-weight: bold;
+    color:silver;
+    font-style: italic;
+}
+
+/* Operations */
+
+ul.operators {
+    box-sizing: border-box;
+    text-align: center;
+    display: inline;
+    
+    
+
+}
+
+li {
+   
+    display: inline;
 }
