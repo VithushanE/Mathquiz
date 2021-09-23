@@ -61,13 +61,22 @@ h4{
 ul.operators {
     box-sizing: border-box;
     text-align: center;
-    display: inline;
-    
-    
-
+    display:inline-block;
+    padding:0px;
 }
 
-li {
-   
-    display: inline;
+ li {
+  
+    padding:0px;
+    margin: 0px;
+  
+  
+}
+
+p{
+    color: white;
+}
+.center{
+    float:right;
+    
 }
