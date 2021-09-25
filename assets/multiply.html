@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,79 +11,98 @@
     <title>Math Quiz Time!</title>
 </head>
 <body>
-    <div class="container">
-        <h1 >Math quiz time!</h1>
-        <h3>Time to test your math skills!</h3>
-    <div class="container">
-        <div class="container together">
-        <nav class="navbar navbar-expand-lg navbar-light " >
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" style="color: white" href="./addition.html">Addition</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" style="color: white" href="./subtraction.html">Subtraction</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  style="color: white" href="./multiply.html">Multiplication</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " style="color: white" href="./divide.html" >Division</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-        <div class="container" id="center">
 
-            <div class="row align-items-start">
+  <!-- Main header -->
+      <div class="container header">
+        <h1 >Math quiz time!</h1>
+        <h4>Time to test your math skills!</h4>
+
+        <div>
+          <ul class='operators'>
+         
+            <li>
+              <a  style="color: white" href="./addition.html">Addition</a>
+            </li>
+         
+            <li >
+              <a style="color: white" href="./subtraction.html">Subtraction</a>
+            </li>
+         
+            <li >
+              <a style="color: white" href="./multiply.html">Multiplication</a>
+            </li>
+       
+            <li >
+              <a  style="color: white" href="./divide.html" >Division</a>
+            </li>
+        
+          </ul>
+        </div>
+      </div>
+
+      <!-- Operators -->
+         <!-- <div  >
+            <ul class='operators'>
+              <li>
+                <a  style="color: white" href="./addition.html">Addition</a>
+              </li>
+              <li >
+                <a style="color: white" href="./subtraction.html">Subtraction</a>
+              </li>
+              <li >
+                <a style="color: white" href="./multiply.html">Multiplication</a>
+              </li>
+              <li >
+                <a  style="color: white" href="./divide.html" >Division</a>
+              </li>
+            </ul>
+          </div> -->
+     
+   
+
+        <div class="container" >
+
+            <div class="row ">
               <div class="col">
-                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                    <div class="card-header" id="num1" >0</div>
+                <div class="card text-white bg-secondary mb-3" style="  padding: 10px;">
+                    <div class="card-header" id="num1" style="font-size: larger;" >0</div>
                   </div>
               </div>
                 
               <div class="col">
-              
-                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                    <div class="card-header" id="sign">*</div>
+                <div class="card text-white bg-secondary mb-3" style="  padding: 10px;">
+                    <div class="card-header" id="sign" style="font-size: larger;">*</div>
                   </div>
               </div>
 
               <div class="col">
-                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                    <div class="card-header" id="num2">0</div>
+                <div class="card text-white bg-secondary mb-3" style="  padding: 10px;">
+                    <div class="card-header" id="num2" style="font-size: larger;">0</div>
                 
                   </div>
               </div>
             </div>
     </div>
 
-    <div class="row justify-content-end">
-        <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+    <div class="header">
+        <div class="card text-white bg-secondary mb-3" id="answerBox" >
             <div class="card-header">Enter Answer Below</div>
             <div class="card-body">
                 <input class="form-control form-control-lg" type="number" placeholder="Answer Here" id="answer" >
-             <button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
-             <button type="button" class="btn btn-danger" onclick="random3()">Reset</button>
-             <button type="button" class="btn btn-info" onclick="verify3()">Verify</button>
+                <button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+                <button type="button" class="btn btn-danger" onclick="random3()">Reset</button>
+                <button type="button" class="btn btn-info" onclick="verify3()">Verify</button>
             </div>
           </div>
-    </div>
+    
 
-    <div class="container" >
+   
       <p >Your answer: </p> <p id="urAnswer"></p>
-      <p >Correct Answer:</p><p id="correctAnswer"></p>
+      <p >Correct Answer:</sp><p id="correctAnswer"></p>
+      <p> timer:</p> 
+      <p id='time'></p>
     </div>
-
-    <div class="container">
-      timer: 
-    </div>
-    </div>
+    
     
 <script src="../math.js"></script>
 </body>
