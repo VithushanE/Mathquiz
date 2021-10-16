@@ -23,6 +23,8 @@ function submit() {
   console.log('submitted answer');
   let a = document.getElementById('answer').value;
   document.getElementById('urAnswer').innerHTML = a;
+  let x = document.getElementById('answer').value
+  console.log(x)
 }
 
 function verify() {
@@ -32,10 +34,20 @@ function verify() {
   let z = parseInt(x) + parseInt(y);
   console.log(z);
   document.getElementById('correctAnswer').innerHTML = z;
+
 }
 
-// timer
+ // To keep count of how many was answered correctly
 
+function tally() {
+  let x = document.getElementById('urAnswer').innerHTML
+  let z = document.getElementById('correctAnswer').innerHTML 
+  if (x = z){
+    let count = 0
+    count += 1
+    console.log('You have ' + y + 'correct')
+  } 
+}
 
 
 // Subtraction
@@ -100,3 +112,20 @@ function verify4() {
     document.getElementById('correctAnswer').innerHTML = z;
   }
   
+
+
+
+// To verfiy correct answer in console 
+
+function getAnswer() {
+  let x = document.getElementById('answer').value
+  console.log(x)
+  }
+
+
+
+  // timer
+
+  function timer(){
+    let 
+  }
